@@ -1,0 +1,5 @@
+﻿scenario_id,scenario_name,temperature,rainfall,weather_status,region,data_mode
+DEMO-01,기본 추천,26.0,0.0,맑음,부산광역시 금정구,발표용 모의 시나리오
+DEMO-02,고령자 이동 부담,22.0,12.0,비,부산광역시 금정구,발표용 모의 시나리오
+DEMO-03,호흡기 민감 상황,25.0,0.0,맑음,부산광역시 금정구,발표용 모의 시나리오
+DEMO-04,복합 특성 상황,21.0,18.0,비,부산광역시 금정구,발표용 모의 시나리오

@@ -1,0 +1,5 @@
+﻿evaluation_axis,dataset,fields,collection_status,source_url
+clinical_condition,건강보험심사평가원 병원정보서비스,진료과목|의사·전문의 수|병상|의료장비|특수진료|평가정보,metadata_collected_service_key_required,https://www.data.go.kr/data/15001698/openapi.do
+clinical_condition,병원 공개 홈페이지 Hero 수집,전문의 근거|재활|수술|협진|주차 안내,collected,data/raw/hero_public_page_evidence.json
+facility_accessibility,전국장애인편의시설표준데이터,승강기|장애인사용가능화장실|장애인전용주차구역|주출입구 높이차이 제거|주출입구 접근로|주출입구 문,metadata_collected_service_key_required,https://www.data.go.kr/data/15100058/standard.do?recommendDataYn=Y
+facility_accessibility,금정구 공공기관 장애인 전용 주차구역 면수 현황,공영주차장 총면수|장애인 주차면수|시설 위치 설명,collected_one_matched_facility,https://council.geumjeong.go.kr/board/view.geumj?boardId=BBS_0000047&dataSid=973084&menuCd=DOM_000000124001002000

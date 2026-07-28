@@ -1,0 +1,1 @@
+"""Mediway domain package."""

@@ -1,0 +1,13 @@
+{
+  "reference_date": "2026-03-31",
+  "population": 206033,
+  "elderly_population": 59484,
+  "elderly_rate_pct": 28.9,
+  "selected_hospitals": 15,
+  "selected_pharmacies": 12,
+  "selected_hospitals_per_10000": 0.73,
+  "selected_pharmacies_per_10000": 0.58,
+  "elderly_per_selected_hospital": 3966,
+  "highest_elderly_rate_dong": "선두구동",
+  "highest_elderly_rate_pct": 44.2
+}

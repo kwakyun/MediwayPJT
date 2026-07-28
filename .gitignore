@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Streamlit secrets (never commit API keys)
+.streamlit/secrets.toml
+
+# Local/editor caches
+.agents/
+.codex_tmp/
+.pnpm-store/
+.vscode/
+.idea/
+
+# Temporary and generated runtime files
+tmp/
+*.log
+*.err.log
+
+# Generated distribution archives
+output/distribution/
+output/submission/
+output/demo_captures/
+
+# OS files
+.DS_Store
+Thumbs.db
