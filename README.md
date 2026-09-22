@@ -4,11 +4,25 @@
 
 브라우저에서 위치 권한을 허용하면 선택 생활권 대신 현재 위도·경도를 출발점으로 사용해 시설별 거리, 추천 점수, 위치 지도와 ODsay 대중교통 경로를 다시 계산합니다. 위치 기능은 HTTPS 배포 주소 또는 `localhost`에서 사용할 수 있습니다.
 
+## 핵심 구현 살펴보기
+
+기술: Python, Streamlit, pandas, Plotly.
+
+- [점수 계산](src/scoring.py): UI에서 분리한 추천 점수와 이유
+- [대중교통 연동](src/mobility.py): API 응답과 실패 상황 처리
+- [데이터 출처·한계](data/source_notes.md): 저장 데이터의 해석 범위
+- [테스트](tests/): 점수·교통·지도·운영시간 등 검증 코드
+
+지역 데이터의 정제와 추천 로직을 연결하는 학습·프로젝트 기록입니다.
+실제 의료 서비스의 성능이나 개인의 단독 구현 성과를 의미하지 않습니다.
+
 ## 설치와 실행
 
 PowerShell 기준:
 
 ```powershell
+git clone https://github.com/kwakyun/MediwayPJT.git
+cd MediwayPJT
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe -m streamlit run app.py
@@ -73,3 +87,7 @@ GEMINI_MODEL = "gemini-3.5-flash"
 ## 주의
 
 이 서비스는 공개 데이터 기반 이동 접근성 참고 도구입니다. 의료 진단이나 치료 적합성을 보장하지 않습니다. 새 자료의 물리 접근성 `unknown`은 중립 처리하며, 공개 진료시간 점수는 의료 수준이 아니라 방문 가능 시간대의 폭을 뜻합니다. 실제 경로와 운영 여부는 외부 지도와 기관에 확인해야 합니다.
+
+## 작업 기록
+
+[AI 활용 기록](AI_NOTES.md) · [변경 기록](CHANGELOG.md) · [작업 방법](CONTRIBUTING.md)
